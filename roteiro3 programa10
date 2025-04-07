@@ -16,7 +16,7 @@ public class programa10 {
                 grat = sb * 5/100;
                 imp = sb * 7/100;
                 sr = sb + grat - imp;
-                System.out.print("Salário a receber: " + sr);
+                System.out.println("Salário a receber: " + sr);
                 
                 
                 entrada.close();
