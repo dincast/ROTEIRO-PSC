@@ -1,21 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.mycompany.roteiro3;
-
-import java.util.Scanner;
-
-/**
- *
- * @author 1272420007
- */
 public class programa11 {
     
     
        public static void main(String[] args) {
            
-           Scanner sc = new Scanner(System.in);
+           Scanner entrada = new Scanner(System.in);
            
            double sb, grat, imp, sr;
            
@@ -25,8 +13,8 @@ public class programa11 {
                 * sr = salário à receber */
                
                System.out.println("Informe o salário base: ");
-               sb = sc.nextDouble();
-               grat = Programa11.calcGrat(sb);
+               sb = entrada.nextDouble();
+               grat = programa11.calcGrat(sb);
                imp = sb * 7/100;
                sr = sb + grat - imp;
                
@@ -34,11 +22,9 @@ public class programa11 {
                
        }
         
-        public static double calcGrat (double sb);
-        
+        public static double calcGrat (double sb)
         {
             return sb*5/100;
             
        }
 }
-
