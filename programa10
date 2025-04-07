@@ -1,17 +1,9 @@
-package com.mycompany.roteiro3;
-
-import java.util.Scanner;
-
-/**
- *
- * @author 1272420007
- */
-public class programa10 {
-    
+public class programa10 {    
     
         public static void main(String[] args) {
             
-            try (Scanner sc = new Scanner(System.in)) {
+            Scanner entrada = new Scanner(System.in); {
+                
                 double sb, grat, imp, sr;
                 
                 /* sb = salário base
@@ -20,11 +12,14 @@ public class programa10 {
                 * sr = salário à receber */
                 
                 System.out.println("Informe o salário base: ");
-                sb = sc.nextDouble();
+                sb = entrada.nextDouble();
                 grat = sb * 5/100;
                 imp = sb * 7/100;
                 sr = sb + grat - imp;
                 System.out.print("Salário a receber: " + sr);
+                
+                
+                entrada.close();
             }
         }
     }
