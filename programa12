@@ -1,0 +1,35 @@
+public class programa12 {
+    
+     public static void main(String[] args) {
+           
+           Scanner entrada = new Scanner(System.in);
+           
+           double sb, grat, imp, sr;
+           
+               /* sb = salário base
+                * grat = gratificação
+                * imp = imposto
+                * sr = salário à receber */
+               
+               System.out.println("Informe o salário base: ");
+               sb = entrada.nextDouble();
+               grat = programa11.calcGrat(sb);
+               imp = programa10.calcImp(sb);
+               sr = sb + grat - imp;
+               System.out.println("Salário a receber: " + sr);
+            }
+     
+     public static double calcGrat(double sb) {
+         return sb * 5 / 100;  
+     }
+    
+     public static double calcImp(double sb) {
+         return sb * 7 / 100;
+     }
+     
+     public static double calcPerc(double sb, int fator) {
+         return sb * fator / 100;
+     }
+     }
+    
+}
